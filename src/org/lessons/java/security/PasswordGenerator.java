@@ -7,22 +7,25 @@ public class PasswordGenerator {
         
         // Richiedere nome, cognome, colore preferito e data di nascita
         
-        System.out.print("Inserisci il tuo nome: ");
+        System.out.println("Inserisci il tuo nome: ");
         String nome = input.nextLine();
         
-        System.out.print("Inserisci il tuo cognome: ");
+        
+        System.out.println("Inserisci il tuo cognome: ");
         String cognome = input.nextLine();
         
-        System.out.print("Inserisci il tuo colore preferito: ");
+        System.out.println("Inserisci il tuo colore preferito: ");
         String colore = input.nextLine();
         
-        System.out.print("Inserisci il tuo giorno di nascita: ");
+        System.out.println("Inserisci il tuo giorno di nascita: ");
         int giorno = input.nextInt();
+       
         
-        System.out.print("Inserisci il tuo mese di nascita: ");
+        System.out.println("Inserisci il tuo mese di nascita: ");
         int mese = input.nextInt();
         
-        System.out.print("Inserisci il tuo anno di nascita: ");
+        
+        System.out.println("Inserisci il tuo anno di nascita: ");
         int anno = input.nextInt();
         
         // Calcolare la somma del giorno, mese e anno di nascita
@@ -36,6 +39,7 @@ public class PasswordGenerator {
         // Stampa la password
         
         System.out.println("La tua password è: " + password);
+        input.close();
     }
 }
 

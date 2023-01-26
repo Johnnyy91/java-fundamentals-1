@@ -8,25 +8,25 @@ public class SondaggioGenerator {
 		
 		System.out.print("Quanti studenti usano Android?");
 		
-		int Android = input.nextInt();
+		int android = input.nextInt();
 		
 		System.out.print("Quanti studenti usano linux?");
 		
-		int Linux = input.nextInt();
+		int linux = input.nextInt();
 		
 		System.out.print("Quanti studenti usano Apple?");
 		
-		int Apple = input.nextInt();
+		int apple = input.nextInt();
 		
-		int Totale = Apple + Android + Linux;
+		int totale = apple + android + linux;
 		
-		double AndroidQuantita = (Android / (double) Totale ) * 100;
-		double linuxQuantita = (Linux / (double) Totale ) * 100;
-		double AppleQuantita = (Apple / (double) Totale) * 100;
+		double androidQuantita = (android / (double) totale ) * 100;
+		double linuxQuantita = (linux / (double) totale ) * 100;
+		double appleQuantita = (apple / (double) totale) * 100;
 		
-		System.out.println("Percentuale studenti Android:" + AndroidQuantita + "%");
+		System.out.println("Percentuale studenti Android:" + androidQuantita + "%");
 		System.out.println("Percentuale studenti linux:" + linuxQuantita + "%");
-		System.out.println("Percentuale studenti Apple:" + AppleQuantita + "%");
+		System.out.println("Percentuale studenti Apple:" + appleQuantita + "%");
 		
 		input.close();	
 	}
